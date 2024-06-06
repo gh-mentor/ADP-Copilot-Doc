@@ -16,14 +16,14 @@ namespace PR_WebApp.Controllers
         private readonly EmployeeService? _employeeService;
         private readonly DepartmentService? _departmentService;
 
-        // add a constructor that initializes the _employeeService field with the employeeService parameter and the _departmentService field with the departmentService parameter.
+
         public EmployeeController(EmployeeService employeeService, DepartmentService departmentService)
         {
             _employeeService = employeeService;
             _departmentService = departmentService;
         }
 
-        // GET: EmployeeController
+
         public ActionResult Index()
         {
             return View();
