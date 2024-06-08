@@ -26,6 +26,7 @@ namespace PR_WebApp.Services
                 {
                     // Generate a random HourlyEmployeeModel
                     Employees.Add(new HourlyEmployee(i, null, $"Employee {i}", $"employee{i}@example.com", "123-456-7890", 1, random.NextDouble() * 30, random.NextDouble() * 40));
+                    
                 }
                 else
                 {

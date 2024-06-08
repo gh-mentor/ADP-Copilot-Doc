@@ -8,7 +8,7 @@
         public double HourlyRate { get { return _HourlyRate; } }
         public double HoursWorked { get { return _HoursWorked; } }
 
-        public HourlyEmployee(int? id, int? reportsTo, string? name, string? email, string? mobile, int? departmentId, double hourlyRate=0, double hoursWorked=0)
+        public HourlyEmployee(int? id, int? reportsTo, string? name, string? email, string? mobile, int? departmentId, double hourlyRate, double hoursWorked)
             : base(id, reportsTo, name, email, mobile, departmentId)
         {
             _HourlyRate = hourlyRate;
