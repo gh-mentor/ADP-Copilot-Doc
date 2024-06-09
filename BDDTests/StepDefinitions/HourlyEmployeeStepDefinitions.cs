@@ -39,14 +39,15 @@ namespace BDDTests.StepDefinitions
         /*
          * Create a method 'GivenTheNumberOfHoursWorkedIs40' that sets the number of hours worked to 40.
          * Details:
-         * It creates a new HourlyEmployee object with the hourly rate set to 10 (from the previous step) and the number of hours worked set to 40
+         * It modifies HourlyEmployee instance with the number of hours worked set to 40
          */
         [Given(@"the number of hours worked is 40")]
         public void GivenTheNumberOfHoursWorkedIs40()
         {
-            _employee = new HourlyEmployee(null, null, null, null, null, null, _employee!.HourlyRate, 40);
+            _employee!.HoursWorked = 40;
+            
 
-            // assertt the number of hours worked is 40
+            // assert the number of hours worked is 40
             _employee!.HoursWorked.Should().Be(40);
         }
 

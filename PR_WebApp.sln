@@ -4,14 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E23AF00E-41D7-4B44-AEB5-8A47F74D8BC6}"
+	ProjectSection(SolutionItems) = preProject
+		inventory.sql = inventory.sql
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PR_WebApp", ".\PR_WebApp\PR_WebApp.csproj", "{D65EF660-7F95-45A0-9393-16F913109336}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PR_WebApp", "PR_WebApp\PR_WebApp.csproj", "{D65EF660-7F95-45A0-9393-16F913109336}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDDTests", ".\BDDTests\BDDTests.csproj", "{7A03D3C6-C6F5-4BF7-9EA7-C37173A45099}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BDDTests", "BDDTests\BDDTests.csproj", "{7A03D3C6-C6F5-4BF7-9EA7-C37173A45099}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayrollLibrary", ".\PayrollLibrary\PayrollLibrary.csproj", "{D3DD7F08-4C72-4C60-B092-177E9CAF8C75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PayrollLibrary", "PayrollLibrary\PayrollLibrary.csproj", "{D3DD7F08-4C72-4C60-B092-177E9CAF8C75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UITests", ".\UITests\UITests.csproj", "{AB4E2BDE-A99F-472C-BEE1-BDB5D3A57BF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UITests", "UITests\UITests.csproj", "{AB4E2BDE-A99F-472C-BEE1-BDB5D3A57BF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

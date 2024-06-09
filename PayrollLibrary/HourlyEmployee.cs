@@ -5,10 +5,10 @@
         private double _HourlyRate;
         private double _HoursWorked;
 
-        public double HourlyRate { get { return _HourlyRate; } }
-        public double HoursWorked { get { return _HoursWorked; } }
+        public double HourlyRate { get { return _HourlyRate; } set { _HourlyRate = value; } }
+        public double HoursWorked { get { return _HoursWorked; } set { _HoursWorked = value; } }
 
-        public HourlyEmployee(int? id, int? reportsTo, string? name, string? email, string? mobile, int? departmentId, double hourlyRate, double hoursWorked)
+        public HourlyEmployee(int? id, int? reportsTo, string? name, string? email, string? mobile, int? departmentId, double hourlyRate = 0, double hoursWorked = 0)
             : base(id, reportsTo, name, email, mobile, departmentId)
         {
             _HourlyRate = hourlyRate;
