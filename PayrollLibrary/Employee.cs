@@ -45,6 +45,9 @@
             set { _DepartmentId = value; }
         }
 
+
+        // add a default c'to
+        public Employee() { }
         public Employee(int? id, int? reportsTo, string? name, string? email, string? mobile, int? departmentId)
         {
             _Id = id;
