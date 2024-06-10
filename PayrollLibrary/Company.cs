@@ -19,7 +19,7 @@ namespace PayrollLibrary
     - A constructor that initializes the name, address, and phoneNumber fields
     - 'AddDepartment'  adds a department to the company's list of departments
     - 'GetDepartment' returns a department object given an id
-    - 'ListDepartments' returns a list of department names
+    - 'ListDepartments' returns a list of Department objects
     */
 
     public class Company
