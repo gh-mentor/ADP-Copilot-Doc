@@ -15,7 +15,9 @@ namespace PayrollLibrary
             {
                 foreach (var employee in department.Employees)
                 {
-                    // Process each employee...
+                    // print the employee payment
+                    Console.WriteLine($"{employee.EmployeeDetails}, Payment: {employee.Payment}");
+                    
                 }
             }
         }
