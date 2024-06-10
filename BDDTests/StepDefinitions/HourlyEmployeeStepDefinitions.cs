@@ -24,14 +24,18 @@ namespace BDDTests.StepDefinitions
          * This method creates a new instance of the HourlyEmployee class and sets the hourly rate to $10.
          * All constructor arguments except the hourly rate and hours worked are nullable and should be set to 'null'.
          * Example:
-         * _employee = new HourlyEmployee(null, null, null, null, null, null, 10, 0);
+         * _employee = new HourlyEmployee();
+         * _employee.HourlyRate = 10;
          */
         [Given(@"the hourly rate is \$10")]
         public void GivenTheHourlyRateIs10()
         {
-            _employee = new HourlyEmployee(null, null, null, null, null, null, 10);
+            _employee = new HourlyEmployee();
             // assert the employee instance is not null
             _employee.Should().NotBeNull();
+
+            // set the hourly rate to 10
+            _employee!.HourlyRate = 10;
             // assert the hourly rate is 10
             _employee!.HourlyRate.Should().Be(10);
         }
