@@ -3,11 +3,6 @@ This file contains a SQL script that creates a database schema for an employee m
 Requirements:
 - SQL Server 2019 or later
 - Database name: EmployeeManagement already exists
-Details:
-- The schema includes three tables: Employees, HourlyEmployees, and SalariedEmployees.
-- The Employees table stores general information about employees, such as their name, email, mobile number, department ID, and the ID of their direct supervisor (ReportsTo).
-- The HourlyEmployees table stores information specific to hourly employees, such as their hourly rate and hours worked.
-- The SalariedEmployees table stores information specific to salaried employees, such as their weekly salary.
 */
 
 
@@ -47,7 +42,8 @@ CREATE TABLE HourlyEmployees (
     EmployeeId INT PRIMARY KEY,
     HourlyRate DECIMAL(10, 2),
     HoursWorked DECIMAL(10, 2),
-    FOREIGN KEY (EmployeeId) REFERENCES Employees(Id)
+    FOREIGN KEY (EmployeeId) REFERENCES Employees(Id),
+    ManagerID INT
 );
 
 /*
