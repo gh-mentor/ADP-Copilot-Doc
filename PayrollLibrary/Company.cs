@@ -84,6 +84,9 @@ namespace PayrollLibrary
             this.zip = zip;
         }
 
+        // add a default c'tor
+        public CompanyAddress() { }
+
         public string GetFullAddress()
         {
             return address + ", " + city + ", " + state + " " + zip;
