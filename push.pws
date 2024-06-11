@@ -1,9 +1,0 @@
-# This PowerShellscript uses git to stage changes, commit them, and push them to the 'main' branch of the upstream repository.
-
-# It is intended to be run from the root of the repository.
-
-git add .
-
-git commit -m "Update"
-
-git push origin main
